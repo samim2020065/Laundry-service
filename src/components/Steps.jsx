@@ -21,6 +21,7 @@ export default function Steps() {
           <div
             key={step}
             className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center transform hover:scale-105 transition duration-300 animate-fade"
+
           >
             <img src={img} alt={title} className="h-32" />
             <h4 className="text-blue-600 mt-4">STEP {step}</h4>
