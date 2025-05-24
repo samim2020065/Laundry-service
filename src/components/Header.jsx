@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import washingMachine from "../assets/washing-machine.png";
 import logo from "../assets/logo_.png";
 import Navbar from './Navbar';
-import Services from './Services'
+import Services from '../pages/Services'
 
 export default function Header() {
   const navigate = useNavigate();

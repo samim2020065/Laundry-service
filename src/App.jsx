@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Import Navbar component
+import Navbar from "./components/Navbar"; 
 import Steps from "./components/Steps";
 import Packages from "./components/Packages";
 import Footer from "./components/Footer";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import Header from "./components/Header";
-import Order from "./components/Order";
-import Services from "./components/Services"// Only for the Home page
+import Order from "./pages/Order";
+import Services from "./pages/Services"
+import WashAndIron from "./pages/WashAndIron";// Only for the Home page
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           {/* Routes for order pages */}
           <Route path="/order" element={<Order />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<WashAndIron />} />
           {/* Routes for SignIn and SignUp pages */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
